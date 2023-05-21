@@ -11,23 +11,41 @@
 
 <body>
     <main class="p-4">
+
         <nav>
-            
+            <label for="default-search"
+                class="mb-2 text-sm font-medium text-blue-1 sr-only">Digite o código do pedido</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <img src="src/img/search.svg" alt="" class="h-5 w-5">
+                </div>
+                <input type="search" id="default-search"
+                    class="block w-full p-4 pl-10 text-sm text-gray-900 border border-slate-400 rounded-full focus:ring-green-1 focus:border-green-1 bg-bg-contrast"
+                    placeholder="Digite o código do pedido">
+            </div>
         </nav>
-        <div class="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-            <img src="https://source.unsplash.com/random/300x300/?2" alt="" class="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500">
+
+        <div class="max-w-xs rounded-md shadow-md mt-6">
+            <img src="https://source.unsplash.com/random/300x300/?2" alt=""
+                class="object-cover object-center w-full rounded-t-md h-72">
             <div class="flex flex-col justify-between p-6 space-y-8">
                 <div>
-                    <button class="px-4 py-1 font-semibold border rounded-l-lg dark:bg-violet-400 dark:border-violet-400 dark:text-gray-900">Monthly</button>
-                    <button class="px-4 py-1 border rounded-r-lg dark:border-violet-400">Annually</button>
+                    <button
+                        class="px-4 py-1 font-semibold border rounded-l-lg">Monthly</button>
+                    <button class="px-4 py-1 border rounded-r-lg">Annually</button>
                 </div>
                 <div class="space-y-2">
                     <h2 class="text-3xl font-semibold tracking-wide">Café Capuccino</h2>
-                    <p class="dark:text-gray-100">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
+                    <p class="">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
                 </div>
-                <button type="button" class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900">Excluir</button>
+                <button type="button"
+                    class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md">Excluir</button>
             </div>
         </div>
+
+        <section>
+
+        </section>
     </main>
 </body>
 
