@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-active {
+    @apply font-semibold border bg-green-500 text-gray-50;
+}
+
+.btn-disabled {
+    @apply border bg-green-100 border-green-700 text-green-700;
+}
+
+.btn-default {
+    @apply flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-amber-800 text-gray-50;
+}
+
+.btn-delete {
+    @apply rounded-lg border px-4 py-2 text-center text-sm font-semibold outline-none transition duration-100 bg-red-500 text-gray-50 hover:bg-red-50 hover:border-red-700 hover:text-red-700 active:bg-red-100
+}
+
+@screen md {
+    .btn-delete {
+        @apply text-base px-8 py-3;
+    }
+}
