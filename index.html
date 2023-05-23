@@ -11,188 +11,69 @@
 
 <body class="bg-gray-50">
 
-    <header class="p-4 flex justify-center">
+    <header class="flex justify-center p-4">
         <div class="container">
-            <label for="default-search" class="mb-2 text-sm font-medium text-blue-1 sr-only">Digite o código do
+            <label for="default-search" class="mb-2 text-sm font-medium sr-only text-blue-1">Digite o código do
                 pedido</label>
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <img src="src/img/search.svg" alt="" class="h-5 w-5">
+                    <img src="src/img/search.svg" alt="" class="w-5 h-5">
                 </div>
                 <input type="search" id="default-search"
-                    class="block w-full p-4 pl-10 text-sm border rounded-full bg-gray-100 text-gray-700 border-gray-700"
+                    class="block w-full p-4 pl-10 text-sm text-gray-700 bg-gray-100 border border-gray-700 rounded-full"
                     placeholder="Digite o código do pedido">
             </div>
         </div>
     </header>
 
     <main>
-        <section class="py-6 sm:py-8 lg:py-12">
-            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-                <div class="mb-6 flex md:items-center flex-col justify-between gap-4 md:flex-row">
+        <section class="section-default">
+            <div class="order-container">
+                <div class="order-grid">
                     <div>
-                        <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl">Mesa 21 - Pedido 21312</h2>
-                        <h4 class="text-xl text-gray-600 lg:text-xl">Às 12h33</h4>
+                        <h2 class="order-title">Mesa 21 - Pedido 21312</h2>
+                        <h4 class="order-time">Às 12h33</h4>
                     </div>
                     <button class="btn-delete">
                         Excluir Pedido
                     </button>
                 </div>
-
+                
                 <!-- grid - inicio -->
 
-                <div class="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
+                <div class="products-grid">
 
                     <!-- produto - inicio -->
 
-                    <div class="bg-gray-100 border-gray-400 border rounded-lg">
-                        <a href="#"
-                            class="group relative mb-2 block h-80 overflow-hidden rounded-t-lg bg-gray-100 lg:mb-3">
+                    <div class="card-container">
+                        <span class="card-link">
                             <img src="https://source.unsplash.com/random/300x300/?coffee" loading="lazy"
                                 alt="Photo by Rachit Tank"
-                                class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-                        </a>
+                                class="card-img" />
+                        </span>
 
-                        <div class="flex flex-col justify-between p-6 space-y-8">
+                        <div class="card-d-container">
                             <div>
-                                <button class="px-4 py-1 btn-disabled rounded-l-lg">Em preparo</button>
-                                <button class="px-4 py-1 btn-disabled rounded-r-lg">Pronto</button>
+                                <button class="btn-disabled btn-left">Em preparo</button>
+                                <button class="btn-disabled btn-right">Pronto</button>
                             </div>
                             <div class="space-y-2">
-                                <h2 class="text-3xl font-semibold tracking-wide">Café Capuccino</h2>
-                                <p class="">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
+                                <h2 class="product-name">Café Capuccino</h2>
+                                <p>Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
                             </div>
                             <button type="button" class="btn-delete">Excluir Produto</button>
                         </div>
-                    </div>
-
-                    <!-- produto - fim -->
-
-                    <!-- produto - inicio -->
-
-                    <div class="bg-gray-100 border-gray-400 border rounded-lg">
-                        <a href="#"
-                            class="group relative mb-2 block h-80 overflow-hidden rounded-t-lg bg-gray-100 lg:mb-3">
-                            <img src="https://source.unsplash.com/random/300x300/?coffee" loading="lazy"
-                                alt="Photo by Rachit Tank"
-                                class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-                        </a>
-
-                        <div class="flex flex-col justify-between p-6 space-y-8">
-                            <div>
-                                <button class="px-4 py-1 btn-disabled rounded-l-lg">Em preparo</button>
-                                <button class="px-4 py-1 btn-disabled rounded-r-lg">Pronto</button>
-                            </div>
-                            <div class="space-y-2">
-                                <h2 class="text-3xl font-semibold tracking-wide">Café Capuccino</h2>
-                                <p class="">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
-                            </div>
-                            <button type="button" class="btn-delete">Excluir Produto</button>
-                        </div>
-                    </div>
-
-                    <!-- produto - fim -->
-
-                    <!-- produto - inicio -->
-
-                    <div class="bg-gray-100 border-gray-400 border rounded-lg">
-                        <a href="#"
-                            class="group relative mb-2 block h-80 overflow-hidden rounded-t-lg bg-gray-100 lg:mb-3">
-                            <img src="https://source.unsplash.com/random/300x300/?coffee" loading="lazy"
-                                alt="Photo by Rachit Tank"
-                                class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-                        </a>
-
-                        <div class="flex flex-col justify-between p-6 space-y-8">
-                            <div>
-                                <button class="px-4 py-1 btn-disabled rounded-l-lg">Em preparo</button>
-                                <button class="px-4 py-1 btn-disabled rounded-r-lg">Pronto</button>
-                            </div>
-                            <div class="space-y-2">
-                                <h2 class="text-3xl font-semibold tracking-wide">Café Capuccino</h2>
-                                <p class="">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
-                            </div>
-                            <button type="button" class="btn-delete">Excluir Produto</button>
-                        </div>
-                    </div>
-
-                    <!-- produto - fim -->
-
-                    <!-- produto - inicio -->
-
-                    <div class="bg-gray-100 border-gray-400 border rounded-lg">
-                        <a href="#"
-                            class="group relative mb-2 block h-80 overflow-hidden rounded-t-lg bg-gray-100 lg:mb-3">
-                            <img src="https://source.unsplash.com/random/300x300/?coffee" loading="lazy"
-                                alt="Photo by Rachit Tank"
-                                class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-                        </a>
-
-                        <div class="flex flex-col justify-between p-6 space-y-8">
-                            <div>
-                                <button class="px-4 py-1 btn-disabled rounded-l-lg">Em preparo</button>
-                                <button class="px-4 py-1 btn-disabled rounded-r-lg">Pronto</button>
-                            </div>
-                            <div class="space-y-2">
-                                <h2 class="text-3xl font-semibold tracking-wide">Café Capuccino</h2>
-                                <p class="">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
-                            </div>
-                            <button type="button" class="btn-delete">Excluir Produto</button>
-                        </div>
-                    </div>
-
-                    <!-- produto - fim -->
-
-                    <!-- grid -fim -->
-                </div>
+                    </div> <!-- produto - fim -->
+                </div><!-- grid -fim -->
             </div>
 
         </section>
 
-        <section class="py-6 sm:py-8 lg:py-12">
-
-            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-                <div class="mb-6 flex md:items-center flex-col justify-between gap-4 md:flex-row">
-                    <div>
-                        <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl">Mesa 21 - Pedido 21312</h2>
-                        <h4 class="text-xl text-gray-600 lg:text-xl">Às 12h33</h4>
-                    </div>
-                    <button class="btn-delete">
-                        Excluir Pedido
-                    </button>
-                </div>
-
-                <!-- grid - inicio -->
-
-                <div class="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
-
-                    <!-- produto - inicio -->
-
-                    <div class="bg-gray-100 border-gray-400 border rounded-lg">
-                        <a href="#"
-                            class="group relative mb-2 block h-80 overflow-hidden rounded-t-lg bg-gray-100 lg:mb-3">
-                            <img src="https://source.unsplash.com/random/300x300/?coffee" loading="lazy"
-                                alt="Photo by Rachit Tank"
-                                class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-                        </a>
-
-                        <div class="flex flex-col justify-between p-6 space-y-8">
-                            <div>
-                                <button class="px-4 py-1 btn-disabled rounded-l-lg">Em preparo</button>
-                                <button class="px-4 py-1 btn-disabled rounded-r-lg">Pronto</button>
-                            </div>
-                            <div class="space-y-2">
-                                <h2 class="text-3xl font-semibold tracking-wide">Café Capuccino</h2>
-                                <p class="">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
-                            </div>
-                            <button type="button" class="btn-delete">Excluir Produto</button>
-                        </div>
-                    </div>
-
-                    <!-- produto - fim -->
-                </div>
-        </section>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
