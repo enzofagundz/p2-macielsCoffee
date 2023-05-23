@@ -19,7 +19,7 @@
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <img src="src/img/search.svg" alt="" class="w-5 h-5">
                 </div>
-                <input type="search" id="default-search"
+                <input type="search" id="search"
                     class="block w-full p-4 pl-10 text-sm text-gray-700 bg-gray-100 border border-gray-700 rounded-full"
                     placeholder="Digite o código do pedido">
             </div>
@@ -31,7 +31,7 @@
             <div class="order-container">
                 <div class="order-grid">
                     <div>
-                        <h2 class="order-title">Mesa 21 - Pedido 21312</h2>
+                        <h2 class="order-title" data-pedido="21312">Mesa 21 - Pedido 21312</h2>
                         <h4 class="order-time">Às 12h33</h4>
                     </div>
                     <button class="btn-delete">
@@ -44,7 +44,47 @@
                 <div class="products-grid">
 
                     <!-- produto - inicio -->
+                    <div class="card-container">
+                        <span class="card-link">
+                            <img src="https://source.unsplash.com/random/300x300/?coffee" loading="lazy"
+                                alt="Photo by Rachit Tank"
+                                class="card-img" />
+                        </span>
 
+                        <div class="card-d-container">
+                            <div>
+                                <button class="btn-disabled btn-left">Em preparo</button>
+                                <button class="btn-disabled btn-right">Pronto</button>
+                            </div>
+                            <div class="space-y-2">
+                                <h2 class="product-name">Café Capuccino</h2>
+                                <p>Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
+                            </div>
+                            <button type="button" class="btn-delete">Excluir Produto</button>
+                        </div>
+                    </div> <!-- produto - fim -->
+                </div><!-- grid -fim -->
+            </div>
+
+        </section>
+        
+        <section class="section-default">
+            <div class="order-container">
+                <div class="order-grid">
+                    <div>
+                        <h2 class="order-title" data-pedido="89">Mesa 21 - Pedido 89</h2>
+                        <h4 class="order-time">Às 12h33</h4>
+                    </div>
+                    <button class="btn-delete">
+                        Excluir Pedido
+                    </button>
+                </div>
+                
+                <!-- grid - inicio -->
+
+                <div class="products-grid">
+
+                    <!-- produto - inicio -->
                     <div class="card-container">
                         <span class="card-link">
                             <img src="https://source.unsplash.com/random/300x300/?coffee" loading="lazy"
