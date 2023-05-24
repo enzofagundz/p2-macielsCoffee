@@ -31,10 +31,10 @@
             <div class="order-container">
                 <div class="order-grid">
                     <div>
-                        <h2 class="order-title" data-pedido="21312">Mesa 21 - Pedido 21312</h2>
+                        <h2 class="order-title" data-order="21312">Mesa 21 - Pedido 21312</h2>
                         <h4 class="order-time">Às 12h33</h4>
                     </div>
-                    <button class="btn-delete">
+                    <button class="btn-delete" data-delete="order">
                         Excluir Pedido
                     </button>
                 </div>
@@ -53,14 +53,14 @@
 
                         <div class="card-d-container">
                             <div>
-                                <button class="btn-disabled btn-left">Em preparo</button>
-                                <button class="btn-disabled btn-right">Pronto</button>
+                                <button class="btn-disabled btn-status btn-left">Em preparo</button>
+                                <button class="btn-disabled btn-status btn-right">Pronto</button>
                             </div>
                             <div class="space-y-2">
                                 <h2 class="product-name">Café Capuccino</h2>
                                 <p>Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
                             </div>
-                            <button type="button" class="btn-delete">Excluir Produto</button>
+                            <button type="button" class="btn-delete" data-delete="product">Excluir Produto</button>
                         </div>
                     </div> <!-- produto - fim -->
                 </div><!-- grid -fim -->
@@ -72,10 +72,10 @@
             <div class="order-container">
                 <div class="order-grid">
                     <div>
-                        <h2 class="order-title" data-pedido="89">Mesa 21 - Pedido 89</h2>
+                        <h2 class="order-title" data-order="23">Mesa 33 - Pedido 23</h2>
                         <h4 class="order-time">Às 12h33</h4>
                     </div>
-                    <button class="btn-delete">
+                    <button class="btn-delete" data-delete="order">
                         Excluir Pedido
                     </button>
                 </div>
@@ -94,14 +94,34 @@
 
                         <div class="card-d-container">
                             <div>
-                                <button class="btn-disabled btn-left">Em preparo</button>
-                                <button class="btn-disabled btn-right">Pronto</button>
+                                <button class="btn-disabled btn-status btn-left">Em preparo</button>
+                                <button class="btn-disabled btn-status btn-right">Pronto</button>
                             </div>
                             <div class="space-y-2">
                                 <h2 class="product-name">Café Capuccino</h2>
                                 <p>Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
                             </div>
-                            <button type="button" class="btn-delete">Excluir Produto</button>
+                            <button type="button" class="btn-delete" data-delete="product">Excluir Produto</button>
+                        </div>
+                    </div> <!-- produto - fim -->
+                    <!-- produto - inicio -->
+                    <div class="card-container">
+                        <span class="card-link">
+                            <img src="https://source.unsplash.com/random/300x300/?coffee" loading="lazy"
+                                alt="Photo by Rachit Tank"
+                                class="card-img" />
+                        </span>
+
+                        <div class="card-d-container">
+                            <div>
+                                <button class="btn-disabled btn-status btn-left">Em preparo</button>
+                                <button class="btn-disabled btn-status btn-right">Pronto</button>
+                            </div>
+                            <div class="space-y-2">
+                                <h2 class="product-name">Café Capuccino</h2>
+                                <p>Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
+                            </div>
+                            <button type="button" class="btn-delete" data-delete="product">Excluir Produto</button>
                         </div>
                     </div> <!-- produto - fim -->
                 </div><!-- grid -fim -->
