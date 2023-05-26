@@ -44,14 +44,31 @@ $(document).ready(function () {
       let toDelete = $(this).attr("data-delete");
 
       if (toDelete == "order") {
-        $(this).closest(".section-default").remove();
+        let $orderContainer = $(this).closest(".order-container");
+        let $sectionDefault = $orderContainer.closest(".section-default");
+        $orderContainer.remove();
+
+        if ($sectionDefault.find(".card-container").length === 0) {
+          $sectionDefault.remove();
+        } else {
+          return false;
+        }
       } else if (toDelete == "product") {
-        $(this).closest(".card-container").remove();
+        let $cardContainer = $(this).closest(".card-container");
+        let $productsGrid = $cardContainer.closest(".products-grid");
+        $cardContainer.remove();
+
+        if ($productsGrid.find(".card-container").length === 0) {
+          let $sectionDefault = $productsGrid.closest(".section-default");
+          $sectionDefault.remove();
+        } else {
+          return false;
+        }
       } else {
         return false;
       }
     });
-}
+  }
 
   function changeStatus() {
     $(".btn-status").on("click", function () {
