@@ -60,21 +60,21 @@ $(document).ready(function () {
       if ($(this).text() == "Pronto") {
         parentCard
           .find(".btn-left")
-          .removeClass("btn-active")
-          .addClass("btn-disabled");
+          .removeClass("btn-preparing-active")
+          .addClass("btn-preparing-disabled");
         parentCard
           .find(".btn-right")
-          .removeClass("btn-disabled")
-          .addClass("btn-active");
+          .removeClass("btn-done-disabled")
+          .addClass("btn-done-active");
       } else if ($(this).text() == "Em preparo") {
         parentCard
           .find(".btn-right")
-          .removeClass("btn-active")
-          .addClass("btn-disabled");
+          .removeClass("btn-done-active")
+          .addClass("btn-done-disabled");
         parentCard
           .find(".btn-left")
-          .removeClass("btn-disabled")
-          .addClass("btn-active");
+          .removeClass("btn-preparing-disabled")
+          .addClass("btn-preparing-active");
       } else {
         return false;
       }
