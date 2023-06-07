@@ -35,15 +35,19 @@
 }
 
 .section-default {
-    @apply py-6;
+    @apply mx-auto p-4;
+}
+
+.order-grid-container {
+    @apply grid grid-cols-1 md:grid-cols-3 auto-rows-auto md:gap-x-4 lg:grid-cols-4 md:gap-y-10 gap-y-6;
 }
 
 .order-container {
-    @apply px-4 mx-auto max-w-screen-2xl;
+    @apply px-4 mx-auto max-w-screen-2xl mt-16;
 }
 
 .order-grid {
-    @apply flex flex-col justify-between gap-4 mb-6;
+    @apply flex flex-col justify-between gap-4;
 }
 
 .order-title {
@@ -90,6 +94,10 @@
     @apply text-xs font-medium tracking-wide px-3 py-1 rounded-full;
 }
 
+.order-pending {
+    @apply bg-gray-400 text-gray-50;
+}
+
 .order-preparing {
     @apply bg-yellow-500 text-gray-50;
 }
@@ -98,11 +106,15 @@
     @apply bg-green-500 text-gray-50;
 }
 
+.order-table {
+    @apply order-grid;
+}
+
+.order-table-container {
+    @apply flex flex-col justify-between py-4;
+}
+
 @screen sm {
-    .section-default {
-        @apply py-8;
-    }
-    
     .products-grid {
         @apply grid-cols-2;
     }
@@ -128,13 +140,25 @@
     .card-link {
         @apply h-80;
     }
+
+    .btn-left, .btn-right {
+        @apply px-2 py-1;
+    }
+
+    .order-grid-container {
+        @apply grid-cols-3 gap-x-4 gap-y-10;
+    }
+    
+    .section-default {
+        @apply p-6;
+    }
+
+    .order-table {
+        @apply col-span-3;
+    }
 }
 
 @screen lg {
-    .section-default {
-        @apply py-12;
-    }
-    
     .order-title {
         @apply text-3xl;
     }
@@ -149,6 +173,14 @@
 
     .card-link {
         @apply mb-3;
+    }
+
+    .order-grid-container {
+        @apply grid-cols-4;
+    }
+
+    .order-table {
+        @apply col-span-4;
     }
 } 
 
