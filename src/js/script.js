@@ -75,7 +75,6 @@ $(document).ready(function () {
       
       `;
     }
-
   }
 
   //Função para formatar a data
@@ -178,6 +177,7 @@ $(document).ready(function () {
       });
     });
   }
+  
   // Função para alterar o status do pedido através do botão
 
   function changeStatus() {
